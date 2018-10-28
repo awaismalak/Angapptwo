@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
+import { LogInComponent } from './log-in/log-in.component';
 let routes:Routes=
 [
   {
@@ -30,6 +31,10 @@ let routes:Routes=
   {
     path:"posts/:id",
     component:PostComponent
+  },
+  {
+    path:"log-in",
+    component:LogInComponent
   }
 ]
 @NgModule({
@@ -40,7 +45,8 @@ let routes:Routes=
     HomeComponent,
     SidebarComponent,
     PostsComponent,
-    PostComponent
+    PostComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
