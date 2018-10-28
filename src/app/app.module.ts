@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { fetchdataService } from './fetchdata.service';
+
 import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -53,7 +55,9 @@ let routes:Routes=
     RouterModule.forRoot(routes, { useHash: true })
 
   ],
-  providers: [],
+  providers: [
+    fetchdataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
