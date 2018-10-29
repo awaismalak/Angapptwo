@@ -1,12 +1,17 @@
-import { Directive ,ElementRef} from '@angular/core';
+import { Directive ,ElementRef, Input, OnInit} from '@angular/core';
 
 @Directive({
   selector: '[appHeighLighter]'
 })
-export class HeighLighterDirective {
-
+export class HeighLighterDirective implements OnInit {
+  @Input() bgColor:string;
+  @Input() color:string;
   constructor(private el:ElementRef) {
-    el.nativeElement.style.backgroundColor="gold";
+    
    }
-
+ngOnInit(){
+  this.el.nativeElement.style.backgroundColor=this.bgColor;
+  this.el.nativeElement.style.color=this.color;
+    
+}
 }
