@@ -12,6 +12,7 @@ import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { HeighLighterDirective } from './heigh-lighter.directive';
+import { MyNgIfDirective } from './my-ng-if.directive';
 let routes:Routes=
 [
   {
@@ -51,6 +52,7 @@ let routes:Routes=
     PostComponent,
     LogInComponent,
     HeighLighterDirective,
+    MyNgIfDirective,
   ],
   imports: [
     BrowserModule,
