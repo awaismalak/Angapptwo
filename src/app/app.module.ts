@@ -11,6 +11,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { HeighLighterDirective } from './heigh-lighter.directive';
 let routes:Routes=
 [
   {
@@ -48,7 +49,8 @@ let routes:Routes=
     SidebarComponent,
     PostsComponent,
     PostComponent,
-    LogInComponent
+    LogInComponent,
+    HeighLighterDirective,
   ],
   imports: [
     BrowserModule,
