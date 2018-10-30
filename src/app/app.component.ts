@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Hello, world!';
+  show = 0;
+  datetitle ="crount to day date is.";
+  dt = new Date();
+  price= 10000;
 }

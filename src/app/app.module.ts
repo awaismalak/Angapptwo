@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { fetchdataService } from './fetchdata.service';
+import { FormsModule }   from '@angular/forms';
 
 import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
@@ -55,6 +56,7 @@ let routes:Routes=
     MyNgIfDirective,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     RouterModule.forRoot(routes, { useHash: true })
 

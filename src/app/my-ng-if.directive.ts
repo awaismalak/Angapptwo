@@ -1,19 +1,22 @@
-import { Directive, Input,ViewContainerRef,TemplateRef,OnInit } from '@angular/core';
+import { Directive, Input,ViewContainerRef,TemplateRef } from '@angular/core';
 
 @Directive({
   selector: '[appMyNgIf]'
 })
-export class MyNgIfDirective implements OnInit {
+export class MyNgIfDirective  {
 
-  constructor(private ViewContainerRef:ViewContainerRef, private TemplateRef:TemplateRef<object>) { }
-ngOnInit(){
- const isBool= true;
- if(isBool){
-   this.ViewContainerRef.createEmbeddedView(this.TemplateRef);
- }
- else{
-   this.ViewContainerRef.clear();
- }
+  constructor(private ViewContainerRef:ViewContainerRef, private TemplateRef:TemplateRef<object>){}
+
+@Input()set appMyNgIf(isBoolean:boolean)
+{
+  if(isBoolean)
+  {
+    this.ViewContainerRef.createEmbeddedView(this.TemplateRef);
+  }
+  else
+  {
+    this.ViewContainerRef.clear();
+
+  }
 }
-
 }
