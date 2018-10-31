@@ -42,7 +42,7 @@
   <p>
   <input type="checkbox" name="" id="" [(ngModel)]="show">Show/Hide
   </p>
-  <h1 class="display-4" *appMyNgIf ="show">{{title |uppercase}}</h1>
+  <h1 class="display-4" *appMyNgIf ="show">{{title |capitalize}}</h1>
   <h3>{{datetitle |titlecase}}</h3>
   <h4>{{dt |date:'d,M,y'}}</h4>
   <h4>Price:{{price |currency:"GBP" }}</h4>

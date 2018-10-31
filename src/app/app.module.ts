@@ -14,6 +14,7 @@ import { PostComponent } from './post/post.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { HeighLighterDirective } from './heigh-lighter.directive';
 import { MyNgIfDirective } from './my-ng-if.directive';
+import { CapitalizePipe } from './capitalize.pipe';
 let routes:Routes=
 [
   {
@@ -54,6 +55,7 @@ let routes:Routes=
     LogInComponent,
     HeighLighterDirective,
     MyNgIfDirective,
+    CapitalizePipe,
   ],
   imports: [
     FormsModule,
